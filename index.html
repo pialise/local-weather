@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Show the Local Weather</title>
+  <link href="styleweather.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="main-container">
+
+  <div class="sted">
+    <!--    <h2 id="localData">Lat + Long</h2>-->
+    <h2>The Weather in</h2>
+    <h1 id="myCity">Your City</h1>
+    <h3 id="myWeather">id myWeather</h3>
+    
+    <button type="button" id="temp" class="temp">
+      <h3 class="normalTemp"><span id="tempToday"></span>&deg;C
+      </h3>
+      <h3 class="altTemp"><span id="fahrToday"></span>&deg;F
+      </h3>
+      <p>Click for F</p>
+    </button>
+    
+    <div id="icon">
+      
+      <div id="sunicon">
+        <div id="thesun"></div>
+      </div>
+
+      <div id="cloudicon">
+        <div id="thecloud"></div>
+        <div id="thecloud2"></div>
+        <div id="thecloud3"></div>
+      </div>
+
+      <div id="rainicon">
+        <div id="therain"></div>
+        <div id="therain2"></div>
+        <div id="therain3"></div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  <h2 class="grey">Thumbnails of the variations that are supposed to show up:</h2>
+
+<!--
+<h2>Button to start the call</h2>
+<div id="testbutton">
+
+  <button id="getMessage" class="buttonStyle" type="button">
+        Push!
+      </button>
+</div>
+-->
+<!--<h2>Result of API-request<br>
+</h2>
+
+<button id="testAPI" class="buttonStyle" type="button">
+      </button> -->
+<div id="thumb">
+<img class="img toright" src="http://res.cloudinary.com/pialisecloud/image/upload/v1457730612/thunder_ngeltb.jpg">
+<img class="img up" src="http://res.cloudinary.com/pialisecloud/image/upload/v1457730636/clouds_ntl04j.jpg">
+<img class="img toleft" src="http://res.cloudinary.com/pialisecloud/image/upload/v1457730629/rain_ch2wlg.jpg">
+<img class="img toright" src="http://res.cloudinary.com/pialisecloud/image/upload/v1457730624/snow_mtwdpz.jpg">
+<img class="img up" src="http://res.cloudinary.com/pialisecloud/image/upload/v1457730619/sun_iyraxe.jpg">
+<img class="img toleft" src="http://res.cloudinary.com/pialisecloud/image/upload/v1457990746/Fog_fvfsbs.jpg">
+</img>
+</div>
+
+<script type="text/javascript" src="weather.js"></script>
+</body>
+</html>
